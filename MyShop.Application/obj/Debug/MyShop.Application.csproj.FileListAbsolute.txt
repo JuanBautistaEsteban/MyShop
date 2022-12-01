@@ -1,0 +1,11 @@
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\bin\Debug\MyShop.Application.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\bin\Debug\MyShop.Application.pdb
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\bin\Debug\MyShop.CORE.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\bin\Debug\MyShop.DAL.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\bin\Debug\MyShop.CORE.pdb
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\bin\Debug\MyShop.DAL.pdb
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\obj\Debug\MyShop.Application.csproj.AssemblyReference.cache
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\obj\Debug\MyShop.Application.csproj.CoreCompileInputs.cache
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\obj\Debug\MyShop.Application.csproj.CopyComplete
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\obj\Debug\MyShop.Application.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.Application\obj\Debug\MyShop.Application.pdb

@@ -1,0 +1,6 @@
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\MyShop.CORE.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\MyShop.CORE.pdb
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\obj\Debug\MyShop.CORE.csproj.AssemblyReference.cache
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\obj\Debug\MyShop.CORE.csproj.CoreCompileInputs.cache
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\obj\Debug\MyShop.CORE.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\obj\Debug\MyShop.CORE.pdb
