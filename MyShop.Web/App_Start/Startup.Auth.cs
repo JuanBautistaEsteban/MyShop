@@ -7,7 +7,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.DataProtection;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using MyShop.Web.Models;
+using MyShop.DAL;
+using MyShop.CORE;
 
 namespace MyShop.Web
 {

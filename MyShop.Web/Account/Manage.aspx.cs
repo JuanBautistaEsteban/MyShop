@@ -8,7 +8,6 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Owin;
-using MyShop.Web.Models;
 
 namespace MyShop.Web.Account
 {

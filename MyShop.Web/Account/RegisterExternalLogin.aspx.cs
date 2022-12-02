@@ -4,7 +4,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Owin;
-using MyShop.Web.Models;
+using MyShop.CORE;
 
 namespace MyShop.Web.Account
 {

@@ -4,3 +4,15 @@ C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\obj\Debug\MyShop.CORE.csproj.
 C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\obj\Debug\MyShop.CORE.csproj.CoreCompileInputs.cache
 C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\obj\Debug\MyShop.CORE.dll
 C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\obj\Debug\MyShop.CORE.pdb
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\MyShop.CORE.dll.config
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\EntityFramework.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\EntityFramework.xml
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\es\Microsoft.AspNet.Identity.Core.resources.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\bin\Debug\es\Microsoft.AspNet.Identity.EntityFramework.resources.dll
+C:\Users\jbautista\source\repos\MyShop\MyShop.CORE\obj\Debug\MyShop.CORE.csproj.CopyComplete

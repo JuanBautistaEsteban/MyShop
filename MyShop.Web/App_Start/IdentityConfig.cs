@@ -6,7 +6,8 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using MyShop.Web.Models;
+using MyShop.CORE;
+using MyShop.DAL;
 
 namespace MyShop.Web
 {
