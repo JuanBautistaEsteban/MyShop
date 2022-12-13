@@ -1,42 +1,68 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MyShop.Web._Default" %>
-
+    
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-
-    <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    <script src="Scripts/materialize.min.js"></script>
+    <script src="Scripts/main.js"></script>
+    
+    <div>
+        <h1>Bienvenidos a la tienda virtual de MyShop</h1>
+        <p class="lead">Cientos de productos a su disposición con un solo clic.<br />
+            Ofertas especiales, Tecnología, Música, Libros, Perfumería y Cosméticos.
+        </p>
     </div>
 
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Getting started</h2>
-            <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
+    <div class="container">
+        <div class="rowcol-md-4">
+            <div class ="col s12">
+                <div class="carousel center-align">
+
+                    <div class =" carousel-item ">
+                        <h2 class="subtitulo">Tecnología</h2>
+                        <div class="linea-division "></div>
+                        <p class="producto">Telefonía móvil</p>
+                        <img src="img/Carrusel/movil1.jpg" />
+                    </div>
+
+                     <div class =" carousel-item ">
+                        <h2 class="subtitulo">Cultura</h2>
+                         <div class="linea-division "></div>
+                        <p class="producto">Libros</p>
+                         <img src="img/Carrusel/libros.jpg" />
+                    </div>
+
+                    <div class =" carousel-item ">
+                        <h2 class="subtitulo">Cosmética</h2>
+                        <div class="linea-division "></div>
+                        <p class="producto">Perfumes</p>
+                        <img src="img/Carrusel/perfume2.jpg" />
+                    </div>
+
+                    <div class =" carousel-item ">
+                        <h2 class="subtitulo">Tecnología</h2>
+                         <div class="linea-division "></div>
+                        <p class="producto">Portatiles</p>
+                         <img src="img/Carrusel/portatil1.jpg" />
+                    </div>
+
+                    <div class =" carousel-item ">
+                        <h2 class="subtitulo">Cultura</h2>
+                        <div class="linea-division "></div>
+                        <p class="producto">Música</p>
+                        <img src="img/Carrusel/musica.jpg" />
+                    </div>
+
+                     <div class =" carousel-item ">
+                        <h2 class="subtitulo">Cosmética</h2>
+                        <div class="linea-division "></div>
+                        <p class="producto">Maquillaje</p>
+                        <img src="img/Carrusel/maquillaje.jpg" />
+                    </div>
+                     
+                </div>
+
+            </div>
         </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Web Hosting</h2>
-            <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
-            </p>
-        </div>
+        
     </div>
 
 </asp:Content>

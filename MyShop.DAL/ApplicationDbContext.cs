@@ -2,6 +2,7 @@
 using MyShop.CORE;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,5 +20,29 @@ namespace MyShop.DAL
         {
             return new ApplicationDbContext();
         }
+
+        //Añadimos las listas persistentes de la base de datos
+
+        /// <summary>
+        /// Colección persistente de Tarjetas
+        /// </summary>
+        public DbSet <Card> Cards { get; set; }
+
+        /// <summary>
+        /// Colección persistente de Direcciones
+        /// </summary>
+        public DbSet<Home> Homes { get; set; }
+
+        /// <summary>
+        /// Colección persistente de Áreas.
+        /// </summary>
+        public DbSet <Area> Areas { get; set; }
+
+        /// <summary>
+        /// Colección persistente de Secciones
+        /// </summary>
+        public DbSet <Section> Sections { get; set; }
+
+
     }
 }

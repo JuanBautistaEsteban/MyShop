@@ -16,6 +16,13 @@ namespace MyShop.Web
             // Código que se ejecuta al iniciar la aplicación
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //Implementación de seguridad por Roles y Carpetas
+            //Obtenemos los contextos de usuarios y BBDD
+
+
+
+            
         }
     }
 }
