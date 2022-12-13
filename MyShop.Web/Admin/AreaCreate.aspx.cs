@@ -34,7 +34,7 @@ namespace MyShop.Web.Admin
 
             AreaManager.Add(area);
             AreaManager.Context.SaveChanges ();
-            Response.Redirect("Default");
+            Response.Redirect("../Default");
         }
     }
 }

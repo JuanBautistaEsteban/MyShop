@@ -403,7 +403,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Clients\" />
+    <Folder Include="Client\" />
     <Folder Include="UnregisteredUser\" />
   </ItemGroup>
   <ItemGroup>
