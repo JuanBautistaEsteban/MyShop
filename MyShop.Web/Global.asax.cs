@@ -26,15 +26,15 @@ namespace MyShop.Web
             ApplicationDbContext contextDB = new ApplicationDbContext();
             RoleManager<IdentityRole> RoleManager = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(contextDB));
 
-            UserManager <ApplicationUser > UserManager = new UserManager<ApplicationUser> (new UserStore <ApplicationUser>(contextDB));
+            UserManager<ApplicationUser> UserManager = new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(contextDB));
 
             #region Creación de roles
-            if(!RoleManager .RoleExists("Admin"))
+            if (!RoleManager.RoleExists("Admin"))
             {
                 RoleManager.Create(new IdentityRole("Admin"));
             }
 
-            if (!RoleManager .RoleExists("Client"))
+            if (!RoleManager.RoleExists("Client"))
             {
                 RoleManager.Create(new IdentityRole("Client"));
             }
@@ -54,7 +54,7 @@ namespace MyShop.Web
                 }
                 else
                 {
-                    throw new Exception("Usuario no creado.");
+                    //throw new Exception("Usuario no creado.");
                 }
             }
             else

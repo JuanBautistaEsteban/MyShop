@@ -43,6 +43,17 @@ namespace MyShop.DAL
         /// </summary>
         public DbSet <Section> Sections { get; set; }
 
+        /// <summary>
+        /// Colección persistente de Productos
+        /// </summary>
+        public DbSet <Product> Products { get; set; }
+
+        /// <summary>
+        /// Colección persistente de Imagenes de Productos.
+        /// </summary>
+        public DbSet <ImgProduct> ImgProducts { get; set; }
+
+
 
     }
 }
