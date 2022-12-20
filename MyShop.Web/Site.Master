@@ -9,12 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %> - Mi aplicación ASP.NET</title>
 
+    
     <!-- Materialize.css -->
-    <link rel="stylesheet" href="Content/materialize.css"/>
+    <!-- <link rel="stylesheet" href="Content/materialize.css"/> -->
 
     <!-- MisEstilos -->
-    <link href="Content/MisEstilos.css" rel="stylesheet" />
-
+    <!-- <link href="Content/MisEstilos.css" rel="stylesheet" /> -->
+    
 
 
     <asp:PlaceHolder runat="server">

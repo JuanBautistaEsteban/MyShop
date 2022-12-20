@@ -1,6 +1,13 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="MyShop.Web._Default" %>
     
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <!-- Materialize.css -->
+    <link rel="stylesheet" href="Content/materialize.css"/>
+
+    <!-- MisEstilos -->
+    <link href="Content/MisEstilos.css" rel="stylesheet" />
+
     <script src="Scripts/materialize.min.js"></script>
     <script src="Scripts/main.js"></script>
     
