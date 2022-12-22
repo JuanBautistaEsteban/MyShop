@@ -4,6 +4,7 @@ using MyShop.DAL;
 using MyShop.Web.Models;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -20,24 +21,24 @@ namespace MyShop.Web.Admin
             ApplicationDbContext contextDB = new ApplicationDbContext();
             AreaManager = new GenericManager<Area>(contextDB);
 
-            IQueryable <Area> areaLists = AreaManager.GetAll();
-            List<Area> list = new List<Area>();
-            list = AreaManager.GetAll().AsEnumerable().ToList();
 
-            ddlType.DataSource = list;
-            ddlType.DataTextField = "Description";
-            ddlType.DataValueField = "Id";
-            ddlType.DataBind();
+            if (!IsPostBack)
+            {
+                List<Area> list = new List<Area>();
+                list = AreaManager.GetAll().AsEnumerable().ToList();
+
+                ddlType.DataSource = list;
+                ddlType.DataTextField = "Description";
+                ddlType.DataValueField = "Id";
+                ddlType.DataBind();
+
+            }
+
+            
 
 
 
-            //foreach (Area area in areaLists)
-            //{
-            //    ddlType.
-            //    ddlType.Items.Add(area.Description);
-            ////}
-            //ddlType.DataSource = areaLists;
-            //ddlType.DataBind();
+           
 
             if (IsPostBack)
             {
@@ -51,13 +52,28 @@ namespace MyShop.Web.Admin
             {
                 string nombre = System.IO.Path.GetFullPath(FileUpload1.FileName);
                 ListBox1.Items.Add(nombre);
-               
+                Label7.Text = ddlType.SelectedValue;
             }
         }
 
         protected void ddlType_TextChanged(object sender, EventArgs e)
         {
             Label7.Text=ddlType.Text;
+        }
+
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            
+            //Product product = new Product()
+            //{
+            //    Name = txtNombre.Text,
+            //    Description = txtDescripcion.Text,
+            //    Price = double.Parse (txtPrecio.Text),
+            //    Stock=int.Parse (txtStock.Text),
+            //    Section_Id
+
+            //}
+
         }
     }
 }

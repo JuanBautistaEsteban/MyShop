@@ -20,7 +20,7 @@
          <div class="form-group ">
             <asp:Label ID="Label3" style="Font-Size:1.5rem" runat="server" Text="Área a la que pertence el producto:" CssClass ="col-md-3" AssociatedControlID ="ddlType"></asp:Label>
             <div class ="col-md-9 " >
-                <asp:DropDownList ID="ddlType" runat="server" CssClass ="form-control"  OnTextChanged="ddlType_TextChanged"></asp:DropDownList>
+                <asp:DropDownList ID="ddlType" runat="server" CssClass ="form-control"  OnTextChanged="ddlType_TextChanged" AutoPostBack="True"></asp:DropDownList>
             </div>
         </div>
         <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
@@ -65,7 +65,7 @@
 
         <div class ="form-group ">
             <div class ="col-md-1" style ="margin : 5px ">
-                <asp:Button ID="btnSubmit" runat="server" Text="Alta Producto" CssClass ="btn btn-default "  />
+                <asp:Button ID="btnSubmit" runat="server" Text="Alta Producto" CssClass ="btn btn-default " OnClick="btnSubmit_Click"  />
             </div>
         </div>
         <br /><br /><br /><br /><br /><br /><br /><br />

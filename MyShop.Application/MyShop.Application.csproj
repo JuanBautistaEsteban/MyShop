@@ -60,6 +60,7 @@
     <Compile Include="CardManager.cs" />
     <Compile Include="GenericManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SectionManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MyShop.CORE\MyShop.CORE.csproj">

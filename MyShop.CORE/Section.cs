@@ -25,13 +25,13 @@ namespace MyShop.CORE
         /// <summary>
         /// Área a la que pertence la sección
         /// </summary>
-        public Area Id_Area { get; set; }
+        public Area Area { get; set; }
 
         /// <summary>
         /// Identificador del área al que pertenece la sección
         /// </summary>
 
-        [ForeignKey("Id_Area")]
+        [ForeignKey("Area")]
         public int Area_Id { get; set; }
     }
 }

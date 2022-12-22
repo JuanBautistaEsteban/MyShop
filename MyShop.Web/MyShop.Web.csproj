@@ -168,7 +168,9 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Admin\AreaCreate.aspx" />
+    <Content Include="Admin\AreaEdit.aspx" />
     <Content Include="Admin\ProductCreate.aspx" />
+    <Content Include="Admin\SectionCreate.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -342,12 +344,26 @@
     <Compile Include="Account\VerifyPhoneNumber.aspx.designer.cs">
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Admin\AreaEdit.aspx.cs">
+      <DependentUpon>AreaEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AreaEdit.aspx.designer.cs">
+      <DependentUpon>AreaEdit.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ProductCreate.aspx.cs">
       <DependentUpon>ProductCreate.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin\ProductCreate.aspx.designer.cs">
       <DependentUpon>ProductCreate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SectionCreate.aspx.cs">
+      <DependentUpon>SectionCreate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\SectionCreate.aspx.designer.cs">
+      <DependentUpon>SectionCreate.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

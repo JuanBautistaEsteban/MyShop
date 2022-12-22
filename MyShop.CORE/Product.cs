@@ -31,12 +31,12 @@ namespace MyShop.CORE
         /// <summary>
         /// Precio de venta
         /// </summary>
-        public double price { get; set; }
+        public double Price { get; set; }
 
         /// <summary>
         /// Stock del producto en el almacén
         /// </summary>
-        public int stock { get; set; }
+        public int Stock { get; set; }
 
         /// <summary>
         /// Sección del producto
