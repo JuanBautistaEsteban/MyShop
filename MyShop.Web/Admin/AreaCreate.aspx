@@ -11,6 +11,7 @@
             <asp:Label ID="Label1" style="Font-Size:1.5rem"  runat ="server" Text="Introduzca la denominación de la nueva área:" CssClass ="col-md-3" AssociatedControlID ="txtNombreArea"></asp:Label>
             <div class ="col-md-9">
                 <asp:TextBox ID="txtNombreArea" runat="server" CssClass ="form-control"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="El nombre del área es obligatorio." ControlToValidate="txtNombreArea" Text="*"></asp:RequiredFieldValidator>
             </div>
         </div>
 
@@ -22,6 +23,8 @@
             </div>
         </div>
         <br /><br />
+
+        <asp:Label ID="Label2" runat="server" Text=""></asp:Label>
     </div>
 
 </asp:Content>

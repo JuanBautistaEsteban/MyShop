@@ -32,9 +32,32 @@ namespace MyShop.Web.Admin
                 Description = txtNombreArea.Text,
             };
 
-            AreaManager.Add(area);
-            AreaManager.Context.SaveChanges ();
-            Response.Redirect("../Default");
+            //Vamos a comprobar que este registro no este ya almacenado
+
+            List<Area> ListAreas = new List<Area>();
+            ListAreas = AreaManager.GetAll().AsEnumerable().ToList();
+
+            bool registrada = false;
+
+            for(int i = 0; i < ListAreas.Count; i++)
+            {
+                if (ListAreas[i].Description == txtNombreArea.Text)
+                {
+                    Label2.Text = "Esa área ya está registrada.";
+                    txtNombreArea.Text = "";
+                    registrada = true;
+                    break;
+
+                }
+            }
+
+            if (!registrada)
+            {
+                AreaManager.Add(area);
+                AreaManager.Context.SaveChanges();
+                Response.Redirect("AreaCreate");
+            }
+            
         }
     }
 }

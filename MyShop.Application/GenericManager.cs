@@ -89,6 +89,7 @@ namespace MyShop.Application
             return (T)Context.Set<T>().Find(new object[] { Id });
         }
 
+
         /// <summary>
         /// Obtiene todas la entidades de un tipo especificas
         /// </summary>
