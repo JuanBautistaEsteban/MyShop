@@ -47,26 +47,7 @@ namespace MyShop.Web.Admin
                 Area_Id = int.Parse(ddlType.SelectedValue)
             };
 
-            //Vamos a comprobar que este registro no este ya almacenado
-
-            //List<Section> ListSections = new List<Section>();
-            //ListSections = SectionManager.GetByAreaId(int.Parse(ddlType.SelectedValue)).AsEnumerable().ToList();
-
-            //bool Registrada = false;
-
-            //for(int i = 0; i < ListSections.Count; i++)
-            //{
-            //    if(ListSections[i].Name == txtNombre.Text)
-            //    {
-            //        Label2.Text = "Esa sección ya está registrada.";
-            //        txtNombre.Text = "";
-            //        Registrada = true;
-            //        break;
-            //    }
-            //}
-
-
-
+           
             if (!comprobarRegistro())
             {
                 SectionManager.Add(section);
@@ -109,6 +90,17 @@ namespace MyShop.Web.Admin
             }
         }
 
+        protected void btnEliminar_Click(object sender, EventArgs e)
+        {
+            if (Request.Form["confirm_value"] == "Yes")
+            {
+                Section sectionborrada = SectionManager.Remone(SectionManager.GetById(int.Parse(lstBoxSeccionesCreadas.SelectedValue)));
+
+                SectionManager.Context.SaveChanges();
+                Response.Redirect("SectionCreate");
+            }
+        }
+
 
         private void CargarSecciones()
         {
@@ -144,5 +136,7 @@ namespace MyShop.Web.Admin
 
             return Registrada;
         }
+
+        
     }
 }

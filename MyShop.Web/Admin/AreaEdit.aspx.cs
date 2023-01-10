@@ -5,6 +5,7 @@ using MyShop.Web.Account;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -16,6 +17,7 @@ namespace MyShop.Web.Admin
         // Ahora creamos un contexto de base de datos, que se lo pasaremos al constructor del GenericManager<Area>
         ApplicationDbContext context = null;
         GenericManager<Area> areaManager = null;
+        List<Area> list = new List<Area>();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,7 +26,7 @@ namespace MyShop.Web.Admin
 
             if (!IsPostBack) {
                             
-                List<Area> list = new List<Area>();
+                //List<Area> list = new List<Area>();
                 list = areaManager.GetAll().AsEnumerable().ToList();
 
                 ddlAreas.DataSource = list;
@@ -73,26 +75,40 @@ namespace MyShop.Web.Admin
             
         }
 
-        //private void datosSeleccionados()
-        //{
-            
-        //    Label4.Text = ddlAreas.SelectedValue;
-        //    Label5.Text = ddlAreas.SelectedItem.Text;
-        //    txtId .Value = ddlAreas.SelectedValue;
-        //    txtDescripcion .Value = ddlAreas.SelectedItem.Text;
-        //}
+        protected void btnAlta_Click(object sender, EventArgs e)
+        {
+            //Creamos un objeto de tipo Area y le asignamos el valor de la propiedad.
+            Area area = new Area()
+            {
+                Description = txtNombre.Text,
+            };
 
-        //protected void Button1_Click(object sender, EventArgs e)
-        //{
-        //    string confirmValue = Request.Form["confirm_value"];
-        //    if (confirmValue == "Yes")
-        //    {
-        //        this.Page.ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('You clicked YES!')", true);
-        //    }
-        //    else
-        //    {
-        //        this.Page.ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('You clicked NO!')", true);
-        //    }
-        //}
+            if(!ComprobarArea())
+            {
+                areaManager.Add(area);
+                areaManager.Context.SaveChanges();
+                Response.Redirect("AreaEdit");
+            }
+
+        }
+
+        
+
+        private bool ComprobarArea()
+        {
+            bool Registrada = false;
+
+            for (int i=0; i<list.Count; i++)
+            {
+                if(list[i].Description  == txtNombre .Text)
+                {
+                    Label2.Text = "Esa área ya está registrada.";
+                    txtNombre.Text = "";
+                    Registrada = true;
+                    break;
+                }
+            }
+            return Registrada;
+        }
     }
 }

@@ -202,6 +202,7 @@
     <Content Include="img\Carrusel\portatil2.jpg" />
     <Content Include="img\fondos\fondo_navidad.jpg" />
     <Content Include="img\fondos\fondo_navidad2.jpeg" />
+    <Content Include="img\logo\logo.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />

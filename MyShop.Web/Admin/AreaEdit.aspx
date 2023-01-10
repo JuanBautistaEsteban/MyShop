@@ -31,12 +31,17 @@
 
     <div class ="form-group ">
         <div class ="col-md-1" style ="margin : 5px ">
+            <asp:Button ID="btnAlta" runat="server" Text="Crear Área" CssClass ="btn btn-default" OnClick="btnAlta_Click"  />
+        </div>
+        <div class ="col-md-2" style ="margin : 5px ">
             <asp:Button ID="btnActualizar" runat="server" Text="Actualizar denominación" CssClass ="btn btn-default " OnClick="btnActualizar_Click" />
-            <asp:Button ID="btnEliminar" runat="server" Text="Eliminar Área" CssClass ="btn btn-default" OnClientClick="Confirm('Centollos')" OnClick="btnEliminar_Click"  />
+        </div>
+        <div class ="col-md-3" style ="margin : 5px ">
+            <asp:Button ID="btnEliminar" runat="server" Text="Eliminar Área" CssClass ="btn btn-default" OnClientClick="ConfirmEliminarArea()" OnClick="btnEliminar_Click"  />
         </div>
    </div>
 
     <br /><br /><br />
 
-    
+    <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
 </asp:Content>

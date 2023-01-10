@@ -27,7 +27,7 @@
             <asp:Label ID="Label1" style="Font-Size:1.5rem"  runat ="server" Text="Nombre de la sección:" CssClass ="col-md-3" AssociatedControlID ="txtNombre"></asp:Label>
             <div class ="col-md-9" >
                 <asp:TextBox ID="txtNombre" runat="server" CssClass ="form-control"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="El nombre de la sección es obligatorio." ControlToValidate="txtNombre" Text="*"></asp:RequiredFieldValidator>
+                <!--<asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="El nombre de la sección es obligatorio." ControlToValidate="txtNombre" Text="*"></asp:RequiredFieldValidator>-->
             </div>
         </div>
 
@@ -41,7 +41,7 @@
                 <asp:Button ID="btnActualizar" runat="server" Text="Actualizar nombre" CssClass ="btn btn-default" OnClick="btnActualizar_Click" />
             </div> 
             <div class ="col-md-3" style ="margin : 5px ">
-                <asp:Button ID="btnEliminar" runat="server" Text="Eliminar sección" CssClass ="btn btn-default "/>
+                <asp:Button ID="btnEliminar" runat="server" Text="Eliminar sección" CssClass ="btn btn-default " OnClientClick="ConfirmarEliminarSeccion()" OnClick="btnEliminar_Click"/>
            </div>
         </div>
         <br /><br />

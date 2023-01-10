@@ -11,8 +11,10 @@
     <script src="Scripts/materialize.min.js"></script>
     <script src="Scripts/main.js"></script>
     
-    <div>
-        <h1>Bienvenidos a la tienda virtual de MyShop</h1>
+     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+     <div>   
+        <h2>Bienvenidos a la tienda virtual de MyShop</h2>
         <p class="lead">Cientos de productos a su disposición con un solo clic.<br />
             Ofertas especiales, Tecnología, Música, Libros, Perfumería y Cosméticos.
         </p>

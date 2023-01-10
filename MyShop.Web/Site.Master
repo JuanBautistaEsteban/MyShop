@@ -17,11 +17,23 @@
     <!-- <link href="Content/MisEstilos.css" rel="stylesheet" /> -->
     
     <script type = "text/javascript">
-        function Confirm(Valor) {
+        function ConfirmEliminarArea() {
             var confirm_value = document.createElement("INPUT");
             confirm_value.type = "hidden";
             confirm_value.name = "confirm_value";
-            if (confirm("Eliminar " + Valor + " supone la eliminación de todos los elementos asociados (Secciones y productos). Está seguro de su eliminación?")) {
+            if (confirm("Eliminar un área supone la eliminación de todos los elementos asociados (Secciones y productos). Está seguro de su eliminación?")) {
+                confirm_value.value = "Yes";
+            } else {
+                confirm_value.value = "No";
+            }
+            document.forms[0].appendChild(confirm_value);
+        }
+
+        function ConfirmarEliminarSeccion() {
+            var confirm_value = document.createElement("INPUT");
+            confirm_value.type = "hidden";
+            confirm_value.name = "confirm_value";
+            if (confirm("Eliminar una sección supone la eliminación de todos los productos asociados. Está seguro de su eliminación?")) {
                 confirm_value.value = "Yes";
             } else {
                 confirm_value.value = "No";
@@ -76,9 +88,8 @@
                         <li><a runat="server" href="~/">Inicio</a></li>
                         <li><a runat="server" href="~/About">Acerca de</a></li>
                         <li><a runat="server" href="~/Contact">Contacto</a></li>
-                        <li><a runat="server" href="~/Admin/AreaCreate">Crear Áreas</a></li>
-                        <li><a runat="server" href="~/Admin/AreaEdit">Editar Áreas</a></li>
-                        <li><a runat="server" href="~/Admin/SectionCreate">Crear Secciones</a></li>
+                        <li><a runat="server" href="~/Admin/AreaEdit">Administrar Áreas</a></li>
+                        <li><a runat="server" href="~/Admin/SectionCreate">Administrar Secciones</a></li>
                     </ul>
 
                     
