@@ -27,5 +27,10 @@ namespace MyShop.Application
         {
             return Context.ImgProducts .Where(e => e.Product_Id  == productId);
         }
+
+        public ImgProduct GetByName (string name)
+        {
+            return Context.ImgProducts .First(e => e.FileName  == name);
+        }
     }
 }

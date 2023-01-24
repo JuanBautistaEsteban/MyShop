@@ -384,6 +384,7 @@
     <Compile Include="Admin\AreaCreate.aspx.designer.cs">
       <DependentUpon>AreaCreate.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Constants.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
